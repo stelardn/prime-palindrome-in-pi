@@ -32,7 +32,7 @@ async function getPi(i) {
         const isPalindrome = verifyPalindrome(smallSection);
 
         if (isPalindrome) {
-          console.log(smallSection + ' is palindrome.......................');
+          // console.log(smallSection + ' is palindrome.......................');
 
           const isPrime = verifyPrime(Number(smallSection));
 
@@ -47,12 +47,14 @@ async function getPi(i) {
           const pos = i + j;
           console.log(smallSection + '-----' + pos);
           i = i + 979;
-          console.log('New fetch comming...');
+          // console.log('New fetch comming...');
           getPi(i);
         }
       }
     })
 }
 
-getPi(24935881);
-
+// getPi(28928243);
+// getPi(92860859);
+getPi(110486775);
+// getPi(1000000000);
